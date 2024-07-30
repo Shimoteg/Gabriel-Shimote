@@ -4,7 +4,39 @@
     box-sizing: border-box
 }
 
+:root {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+}
+
 body {
-    background-image: url(./assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
+    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+    min-height: 100vh;
+
+}
+
+#container {
+    width: 360px;
+    margin: auto;
+    border: solid red 1px;
+}
+
+#profile {
+    text-align: center;
+
+}
+
+.avatar {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-content: center;
+    margin: auto;
+    display: block;
+}
+
+#userName {
+    font-weight: 500;
+    line-height: 24px;
 }
