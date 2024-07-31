@@ -10,6 +10,7 @@
     --text-color: white;
     --bg-url: url(./assets/bg-mobile.jpg);
     --fumaca: url(./assets/fumaca.png);
+    --stroke-color: 1 px solid rgba(255 255, 255, 0.7)
 }
 
 .light {
@@ -79,7 +80,7 @@ ul li a {
     padding: 16px 24px;
 
     background: rgba(255 255, 255, 0.2);
-    border: 1 px solid rgba(255 255, 255, 0.7);
+    border: var(--stroke-color);
     border-radius: 8px;
 
     backdrop-filter: blur(4px) saturate(180%);
