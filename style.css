@@ -10,20 +10,30 @@
     --text-color: white;
     --bg-url: url(./assets/bg-mobile.jpg);
     --fumaca: url(./assets/fumaca.png);
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
     --switch-bg-url: url(./assets/moon-stars.svg);
+
+
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.01);
+    --surface-color-hover: rgba(0, 0, 0, 0.05);
+    --highilght-color: rgba(0, 0, 0, 0.1);
+
+
+
 }
 
 .light {
     --text-color: black;
     --bg-url: url(./assets/bg-mobile-light.jpg);
     --fumaca: url(./assets/faisca.jpeg);
-    --stroke-color: rgba(255, 255, 255, 0.5);
-    --surface-color: rgba(255, 255, 255, 0.05);
-    --surface-color-hover: rgba(255, 255, 255, 0.02);
     --switch-bg-url: url(./assets/sun.svg);
+
+
+    --stroke-color: rgba(0, 0, 0, 0.87);
+    --surface-color: rgba(0, 0, 0, 0.14);
+    --surface-color-hover: rgba(0, 0, 0, 0.12);
+    --highilght-color: rgba(255, 255, 255, 0.2);
+
 }
 
 body {
