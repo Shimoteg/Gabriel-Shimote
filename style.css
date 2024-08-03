@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffffff;
 }
 
 :root {
@@ -11,12 +10,10 @@
     --bg-url: url(./assets/bg-mobile.jpg);
     --fumaca: url(./assets/fumaca.png);
     --switch-bg-url: url(./assets/moon-stars.svg);
-
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(0, 0, 0, 0.01);
     --surface-color-hover: rgba(0, 0, 0, 0.05);
-    --highilght-color: rgba(0, 0, 0, 0.1);
-
+    --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 .light {
@@ -24,12 +21,10 @@
     --bg-url: url(./assets/bg-mobile-light.jpg);
     --fumaca: url(./assets/faisca.jpeg);
     --switch-bg-url: url(./assets/sun.svg);
-
     --stroke-color: rgba(0, 0, 0, 0.87);
     --surface-color: rgba(0, 0, 0, 0.14);
     --surface-color-hover: rgba(0, 0, 0, 0.12);
-    --highilght-color: rgba(255, 255, 255, 0.2);
-
+    --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -44,7 +39,6 @@ body * {
 #container {
     width: 100%;
     max-width: 588px;
-
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -52,7 +46,6 @@ body * {
 #profile {
     text-align: center;
     padding: 24px;
-
 }
 
 .avatar {
@@ -60,7 +53,6 @@ body * {
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-
     justify-content: center;
     margin: auto;
     display: block;
@@ -76,7 +68,6 @@ body * {
 /* links */
 ul {
     list-style: none;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -84,31 +75,23 @@ ul {
 }
 
 ul li a {
-
     text-decoration: none;
     justify-content: center;
     align-items: center;
-
     display: flex;
     gap: 16px;
     padding: 16px 24px;
-
-    background: var(--surface-colorr);
-    border: var(--stroke-color);
+    background: var(--surface-color);
     border-radius: 8px;
-
     backdrop-filter: blur(4px) saturate(180%);
     -webkit-backdrop-filter: blur(4px) saturate(180%);
-
     font-weight: 500;
-
     transition: background 0.2s;
     border: 1px solid var(--stroke-color);
 }
 
 /* pseudo-selector */
 ul li a:hover {
-
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
 }
@@ -116,7 +99,6 @@ ul li a:hover {
 #social-links {
     display: flex;
     gap: 10px;
-
     justify-content: center;
     padding: 24px 0;
     font-size: 24px;
@@ -126,13 +108,12 @@ ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 10px;
     border-radius: 50%;
 }
 
 #social-links a:hover {
-    background: rgba(255 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05);
     border: 1.5px solid var(--text-color);
     backdrop-filter: blur(4px) saturate(180%);
     -webkit-backdrop-filter: blur(4px) saturate(180%);
@@ -140,76 +121,49 @@ ul li a:hover {
 
 /* classe para o fundo escuro com a imagem da fumaça */
 .dark-fumaca {
-
-    /* background é a imagem da fumaça */
     background: var(--fumaca) no-repeat center/cover;
-
-    /* dimensões do elemento */
     width: 200px;
     height: 200px;
-
-    /* arredondar as bordas */
     border-radius: 50%;
-
-    /* centralizar o conteúdo */
     justify-items: center;
     align-items: center;
     margin: auto;
-    transition: transform 0, 3s ease;
+    transition: transform 0.3s ease;
 }
 
 /* centralizar o elemento */
 .dark-fumaca:hover {
     transform: scale(2);
-
-    /* centralizar o conteúdo */
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-    transition: transform 0, 3s ease;
-
-    /* transição para o redimensionamento */
-    transition: transform 0, 3s ease;
     position: relative;
     z-index: 1;
-
 }
 
+/* texto do switch */
 #switch-text {
-
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: auto;
     padding: 0px 24px 0px 24px;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-
     color: var(--text-color);
     font-style: italic;
-
 }
 
 #switch {
-
     margin: auto;
     width: 64px;
-
     display: block;
-
     flex-direction: column;
-
     gap: 10px;
     position: relative;
     left: 65%;
-    bottom: 60PX;
-
+    bottom: 60px;
 }
 
 #switch button {
-
     width: 32px;
     height: 32px;
     background: white var(--switch-bg-url) no-repeat center;
@@ -218,19 +172,15 @@ ul li a:hover {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-
 }
 
 #background-switch {
-
     display: block;
     width: 64px;
     height: 24px;
-
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     backdrop-filter: blur(4px);
@@ -244,13 +194,12 @@ ul li a:hover {
 }
 
 /* Media queries */
-
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     :root {
-        --bg-url: url(.assets/desktop.jpg);
+        --bg-url: url(./assets/desktop.jpg);
     }
 
     .light {
-        --bg-url: url(.assets/desktop-light.jpg);
+        --bg-url: url(./assets/desktoplight.jpg);
     }
 }
