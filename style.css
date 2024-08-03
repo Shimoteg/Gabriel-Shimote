@@ -38,7 +38,7 @@ body * {
 
 #container {
     width: 100%;
-    max-width: 588px;
+    max-width: 1000px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -153,13 +153,16 @@ ul li a:hover {
 }
 
 #switch {
-    margin: auto;
+    margin: 85px auto 60px;
     width: 64px;
     display: block;
-    flex-direction: column;
+
+    display: flex;
+    align-items: center;
+
     gap: 10px;
     position: relative;
-    left: 65%;
+    left: 0;
     bottom: 60px;
 }
 
