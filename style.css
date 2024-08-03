@@ -173,8 +173,6 @@ ul li a:hover {
     position: relative;
     z-index: 1;
 
-    background-image: ;
-
 }
 
 #switch-text {
@@ -243,4 +241,16 @@ ul li a:hover {
 .light #switch button {
     right: 0;
     left: initial;
+}
+
+/* Media queries */
+
+@media (min-width: 600px) {
+    :root {
+        --bg-url: url(.assets/desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(.assets/desktop-light.jpg);
+    }
 }
