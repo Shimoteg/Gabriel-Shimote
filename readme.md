@@ -27,4 +27,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto Devlinks mostra uma foto de perfil e algumas informações sobre mim, meu curriculo e minha pagina de impressão 3D, tambem mostra fotos dos meus cachorros para combinar coma aplicação de tema.
 
-<span> https://shimoteg.github.io/Discover-rockseat/ </span>
+<span> https://shimoteg.github.io/Gabriel-Shimote/ </span>
